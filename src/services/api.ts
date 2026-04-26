@@ -3,7 +3,7 @@ import type { Product } from '../types/product';
 
 // Use environment variable for production
 const API_URL = import.meta.env.PROD 
-  ? 'https://frozenbasket-api.onrender.com'  // Your Render URL
+  ? 'https://frozenbasket-api.onrender.com/api'  // Your Render URL
   : '/api';
 
 export const fetchProducts = async (): Promise<Product[]> => {
